@@ -2,7 +2,7 @@ import { i18n } from './i18n';
 
 const DEFAULT_STEP = 20;
 
-export const getStatusOfPercents = (percentage: number, threshold = 60) => {
+export const getStatusOfPercents = (percentage: number, threshold = 0) => {
     let step = DEFAULT_STEP;
 
     if (threshold > 100 - DEFAULT_STEP * 2) {
